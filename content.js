@@ -2,13 +2,7 @@
 function hidePrices() {
     // Define some common selectors for Amazon price elements
     const priceSelectors = [
-        ".a-price",                 // General price on product listings
-        "#priceblock_ourprice",    // Price on product detail pages
-        "#priceblock_dealprice",   // Deal price on product detail pages
-        "#priceblock_saleprice",   // Sale price on product detail pages
-        ".priceToPay",             // Cart page price
-        ".sw-atc-price-single",    // Cart subtotal price
-        ".sc-price"                // Price in the shopping cart
+        "a-price-whole",                 // ほしい物リスト、商品ページ
     ];
 
     // Iterate over each selector and hide the matching elements
