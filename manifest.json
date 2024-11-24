@@ -1,4 +1,4 @@
-const manifest = {
+{
     "manifest_version": 3,
     "name": "Amazon Price Hider",
     "version": "1.0",
@@ -23,7 +23,6 @@ const manifest = {
         "service_worker": "background.js"
     },
     "action": {
-        "default_popup": "popup.html",
         "default_icon": "icon.png"
     }
-};
+}
