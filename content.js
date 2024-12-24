@@ -2,8 +2,15 @@
 function hidePrices() {
     // Define some common selectors for Amazon price elements
     const priceSelectors = [
-        "a-price-whole",                 // ほしい物リスト、商品ページ
+        ".a-price-whole",                 // ほしい物リスト、商品ページ
+        ".a-price" // ほしい物リスト、商品ページ
     ];
+
+
+    const priceTags = document.querySelectorAll("[class*='price']");
+    priceTags.forEach(tag => {
+        tag.style.display = "none";
+    });
 
     // Iterate over each selector and hide the matching elements
     priceSelectors.forEach(selector => {
