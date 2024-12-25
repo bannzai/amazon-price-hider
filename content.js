@@ -19,6 +19,12 @@ function hidePrices() {
             element.style.display = "none";
         });
     });
+
+    // idを使用して税関連の表示を非表示にする
+    const taxElement = document.getElementById("taxInclusiveMessage");
+    if (taxElement) {
+        taxElement.style.display = "none"; // 税関連のメッセージを非表示にする
+    }
 }
 
 // Run hidePrices whenever the DOM is loaded
